@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  background: #000;
+  color: white;
+  justify-content: space-around;
+  margin: 0 auto;
+  align-items: center;
+  padding: 2rem 0;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.middle {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  cursor: pointer;
+}
+.middle li:hover {
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+.body-height {
+  height: 300vh;
+}
+.right span {
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  animation: stickyNav 0.5s ease forwards;
+}
+
+@keyframes stickyNav {
+  0% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
