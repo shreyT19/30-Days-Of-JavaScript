@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 95vh;
+    background-color: cornflowerblue;
+}
+.container{
+    padding: 6rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+h1{
+    margin-bottom: 2rem;
+    color: orangered;
+    padding-bottom: 2rem;
+}
+.statusp{
+    color:#0d6efd;
+}
