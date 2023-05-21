@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    background-color: #1f2937;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+    border-radius: 1rem;
+    border: 1px solid crimson; 
+}
+input,button{
+    border: none;
+    appearance: none;
+    outline: none;
+    background: none;
+}
+.main-container h1{
+    margin-bottom: 1rem;
+}
+
+.add-task-input{
+    width: 80%;
+    flex: 1 1 0%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(50, 47, 47);
+    color:red; 
+}
+.add-task-input::placeholder{
+    color:grey;
+    font-size: 0.9rem;
+}
+#add-task-btn{
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right,crimson,black);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.tasks-list{
+    padding: 1rem ;
+}
+.tasks-list h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 0.8rem;
+    background-color: rgb(50, 47, 47);
+    
+}
+#tasks .text{
+    margin-right: 20px;
+    color:white;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    
+}
+
+.content .text:not(:read-only){
+    color:crimson !important;
+    font-size: 1.05rem;
+}
+
+#tasks .task .actions{
+    display: flex;
+    gap:1rem;
+    margin: 0 -0.5rem;
+}
+#tasks .task .actions{
+    margin-right: 1rem;
+}
+#tasks .task .actions button{
+    border-radius: 1rem;
+    cursor: pointer;
+    color:white;
+    padding: 0.2rem 1rem;
+    transition: 0.4s;
+}
+#tasks .task .actions button:hover{
+    opacity: 0.6;
+}
+#tasks .task .actions button:active{
+    opacity: 0.8;
+}
+.edit{
+    background-color: green;
+}
+.delete{
+    background-color: crimson;
+}
