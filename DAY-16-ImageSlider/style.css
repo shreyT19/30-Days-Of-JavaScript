@@ -54,11 +54,11 @@ body{
     transform: translateY(-50%);
 }
 .left{
-    left: 17.5%;   
+    left: 6.5%;   
     
 }
 .right{
-    right: 17.5%;
+    right: 6.5%;
 }
 
 @media screen and (max-width:900px) {
