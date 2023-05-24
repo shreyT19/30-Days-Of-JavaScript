@@ -1,0 +1,95 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-color: darkcyan;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: crimson;
+  margin-bottom: 1rem;
+}
+.container {
+  background-color: white;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  flex-direction: column;
+}
+.both {
+  display: flex;
+  gap: 0.5rem;
+}
+input {
+  border: 1.5px solid crimson;
+  width: 90%;
+  padding: 0.4rem 2rem;
+  border-radius: 0.5rem;
+}
+.total {
+  margin-top: 2rem;
+}
+.btn {
+  padding: 0.4rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  appearance: none;
+  background-color: crimson;
+  cursor: pointer;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.link1,
+.link2 {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  flex: 1 0 0;
+}
+.copy1,
+.copy2 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 100;
+  width: 5rem !important;
+  padding: 0.4rem 1rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 0.5rem;
+  appearance: none;
+  background-color: darkcyan;
+}
+.error-msg {
+  display: none;
+  text-align: center;
+  font-size: 1.5rem;
+  color: crimson !important;
+  margin-bottom: 2rem;
+}
+.links {
+  display: none;
+  color: darkcyan;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.output1,
+.output2 {
+  font-size: 1rem;
+  color: crimson;
+  font-weight: 200;
+}
